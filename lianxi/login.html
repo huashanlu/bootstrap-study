@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+    body {
+        background-color: #eee;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .form-horizontal {
+        max-width: 350px;
+        margin-left: 30%;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">name:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name" placeholder="username" required autofocus readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">password:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" placeholder="password" required>
+                </div>
+            </div>
+            <div class="checkbox col-sm-9 col-sm-offset-3">
+                <label class="glyphicon">
+                    <input type="checkbox"> 记住我
+                </label>
+            </div>
+            <input type="submit" class="btn btn-lg btn-primary btn-block" value="sign in ">
+        </form>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
