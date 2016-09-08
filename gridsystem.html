@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grid system</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+    	.row div,.wrapper div{
+    		border:1px solid #444;
+    	}
+    	/** mixin+变量生成布局 **/
+    	.wrapper{
+    		.make-row();
+    	}
+    	.content-main{
+    		.make-lg-column(8);
+    	}
+    	.content-secondary{
+    		.make-lg-column(3);
+    		.make-lg-column-offset(1);
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-6 col-lg-4" style="background-color:#dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <!--响应式列重置 清除浮动 clearfix -->
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="col-sm-11 col-md-6 col-lg-8" style="background-color:#dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+        <!--列偏移  col-md-offset-* -->
+        <h1>列偏移</h1>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">.col-md-4 col-md-offset-1</div>
+            <div class="col-md-4 col-md-offset-3">col-md-4 col-md-offset-3</div>
+        </div>
+		<h1>嵌套列</h1>
+        <div class="row">
+        	<div class="col-md-4">
+        		col-md-4
+        		<div class="row">
+        			<div class="col-md-4">col-md-4</div>
+        			<div class="col-md-4 col-md-offset-3">col-md-4 col-md-offset-3</div>
+        		</div>
+        	</div>
+        	<div class="col-md-4">col-md-4</div>
+        </div>
+        <h1>列排序</h1>
+        <div class="row">
+        	<div class="col-md-4 col-md-push-8">col-md-4 col-md-push-8 后移</div>
+        	<div class="col-md-8 col-md-pull-4">col-md-8 col-md-pull-4 前移</div>
+        </div>
+
+		<h1>mixin+变量 布局</h1>
+		 <div class="wrapper">
+			<div class="content-main">content-main</div>	
+			<div class="content-secondary">content-secondary</div>
+		</div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" href="js/bootstrap.min.js"></script>
+</body>
+
+</html>

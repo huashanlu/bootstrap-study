@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>基本表单</h1>
+    <form action="">
+        <div class="form-group">
+            <label for="email1">email:</label>
+            <input type="email" class="form-control" id="email1" placeholder="email">
+        </div>
+        <div class="form-group">
+            <label for="password1">password:</label>
+            <input type="password" class="form-control" id="password1" placeholder="password">
+        </div>
+        <div class="form-group">
+            <label for="file1">file input:</label>
+            <input type="file" id="file1">
+            <p class="help-block">选择文件</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> 选择
+            </label>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="submit" class="btn btn-default">
+        </div>
+    </form>
+    <h1>内联表单</h1>
+    <form class="form-inline">
+        <div class="form-group">
+            <!--<label for="email">email:</label>-->
+            <label for="email2" class="sr-only">email:</label>
+            <input type="email" class="form-control" id="email2" placeholder="email">
+        </div>
+        <div class="form-group">
+            <label for="password2">password:</label>
+            <input type="password" class="form-control" id="password2" placeholder="password">
+        </div>
+        <input type="submit" name="submit" class="btn btn-default">
+    </form>
+    <br>
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer cash</button>
+    </form>
+    <h1>表单水平排列</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="email3" class="col-sm-2 control-label">email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email3" placeholder="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password3" class="col-sm-2 control-label">password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="password3" placeholder="password">
+            </div>
+        </div>
+        <div class="checkbox col-sm-10 col-sm-offset-2">
+            <label class="glyphicon">
+                <input type="checkbox"> 选择
+            </label>
+        </div>
+        <div class="col-sm-10 col-sm-offset-2">
+            <input type="submit" name="submit" class="btn btn-default">
+        </div>
+    </form>
+    <select multiple class="form-control">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+    </select>
+    <h1>其他</h1>
+    <form>
+        <div class="form-group has-success has-feedback">
+            <label for="email4">email:</label>
+            <input type="email" class="form-control" id="email4" placeholder="email">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            <span class="sr-only">(success)</span>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="password4">password:</label>
+            <input type="password" class="form-control" id="password4" placeholder="password">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            <span class="sr-only">(error)</span>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="control-label" for="inputWarning2">Input with warning</label>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+            </div>
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+            <span class="sr-only">(warning)</span>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder=".input-lg">
+            <input type="text" class="form-control input-sm" placeholder=".input-sm">
+            <input type="text" class="form-control" placeholder="default input">
+        </div>
+    </form>
+    <form class="form-inline">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess4">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess4Status" class="sr-only">(success)</span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

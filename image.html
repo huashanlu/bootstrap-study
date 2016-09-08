@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>图片</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .center-block {
+        width: 300px;    
+    }
+    .text-hide{
+    	background-image: url(img/Hydrangeas.jpg);
+    }
+    </style>
+</head>
+
+<body>
+    <h3>响应式图片</h3>
+    <img src="img/ping.jpg" class="img-responsive">
+    <h3>图片形状</h3>
+    <img src="img/Hydrangeas.jpg" alt="..." class="img-rounded" width="200px">
+    <img src="img/Hydrangeas.jpg" alt="..." class="img-circle" width="200px" height="200px">
+    <img src="img/Hydrangeas.jpg" alt="..." class="img-thumbnail" width="200px">
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <br>
+    <span class="caret"></span>
+    <span class="glyphicon glyphicon-triangle-bottom"></span>
+    <div class="center-block">
+        <img src="img/Hydrangeas.jpg" alt="..." class="img-circle" width="200px" height="200px">
+    </div>
+    <div class="show">显示</div>
+    <div class="hidden">隐藏</div>
+     <div class="show">显示</div>
+    <div class="sr-only" style="border: 1px solid #ccc">隐藏</div>
+     <div class="show">显示</div>
+     <div class="invisible">隐藏</div>
+     <div class="show">显示</div>
+     <div class="text-hide">Custom headingCustom headingCustom headingCustom headingCustom heading</div>
+     <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

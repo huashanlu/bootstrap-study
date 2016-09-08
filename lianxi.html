@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+    /* .dropdown,.dropup{
+            display: inline-block;
+        }
+        button{
+            width: 150px;
+        } */
+    </style>
+</head>
+<button type="button" class="btn btn-success" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-success">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> 左对齐
+</button>
+<div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span> Enter a valid email address
+</div>
+<div class="page-header">
+    <h1>Badges</h1>
+</div>
+<p>
+    <a href="javascript:void(0)">Inbox <span class="badge">12</span></a>
+</p>
+<ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="javascript:void(0)">home <span class="badge">12</span></a></li>
+    <li role="presentation"><a href="javascript:void(0)">profile <span class="badge">12</span></a></li>
+    <li role="presentation"><a href="javascript:void(0)">messages <span class="badge">12</span></a></li>
+</ul>
+<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>嘿嘿嘿
+<h2>下拉菜单</h2>
+<div class="dropdown">
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+</div>
+<hr>
+<div class="dropdown" id="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <!-- 添加标题 -->
+        <li class="dropdown-header">标题1</li>
+        <li><a href="http://www.baidu.com">菜单1</a></li>
+        <li class="dropdown-header">标题2</li>
+        <li><a href="#">菜单2</a></li>
+        <li class="dropdown-header">标题3</li>
+        <li><a href="#">菜单3</a></li>
+    </ul>
+</div>
+<div class="dropup" id="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropupMenu1" aria-haspopup="true" aria-expanded="true">Dropup <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropupMenu1">
+        <li><a href="#">菜单</a></li>
+        <li><a href="#">菜单</a></li>
+        <li><a href="#">菜单</a></li>
+        <li><a href="#">菜单</a></li>
+    </ul>
+</div>
+<hr>
+<h3>对齐</h3>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropupMenu1" aria-haspopup="true" aria-expanded="true">Dropup-right <span class="caret"></span></button>
+    <!-- 相对于父元素右对齐 -->
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropupMenu1">
+        <li><a href="#">菜单~</a></li>
+        <li><a href="#">菜单~</a></li>
+        <li><a href="#">菜单~</a></li>
+        <li><a href="#">菜单~</a></li>
+    </ul>
+</div>
+<hr>
+<h3>分割线</h3>
+<div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropupMenu1" aria-haspopup="true" aria-expanded="true">Dropup <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropupMenu1">
+        <li><a href="#">菜单*</a></li>
+        <li><a href="#">菜单*</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">菜单*</a></li>
+        <li><a href="#">菜单*</a></li>
+    </ul>
+</div>
+<hr>
+<h3>禁用菜单项</h3>
+<div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropupMenu1" aria-haspopup="true" aria-expanded="true">Dropup <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropupMenu1">
+        <li><a href="#">菜单*</a></li>
+        <li class="disabled"><a href="#">禁用的菜单</a></li>
+        <li><a href="#">菜单*</a></li>
+    </ul>
+</div>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+//实现鼠标滑过下拉菜单，就显示子菜单
+$('#dropdown,#dropup').mouseover(function() {
+    $(this).addClass('open');
+}).mouseout(function() {
+    $(this).removeClass('open');
+});
+</script>
+
+</html>
