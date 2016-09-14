@@ -10,17 +10,24 @@
     <script type="text/javascript " src="js/jquery-3.0.0.min.js "></script>
     <script type="text/javascript " src="js/bootstrap.min.js "></script>
     <link rel="stylesheet " type="text/css " href="css/travel.css ">
-    <link rel="shortcut icon" href="http://www.travelegendary.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+<!--     <link rel="shortcut icon" href="http://www.travelegendary.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon"> -->
 </head>
 <body>	
 	<div class="container-fluid ">
 		<div class="row nav-login ">
 			<div class="col-xs-6 col-md-4 left">
-				<button class="btn weibo"></button>
-				<!-- <a href="#" title="微博">
-				<div class="weibo"></div></a>
-				<a href="#" class="qq" title="qq"></a>
-				<a href="#" class="weixin" title="微信"></a> -->
+				<ul class="ul-share">
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到新浪微博" class="icon-share-weibo">新浪微博</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到微信" class="icon-share-wechart">微信</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到qq" class="icon-share-qq">qq</a>
+
+					</li>
+				</ul>
 			</div>
 			<div class="col-xs-6 col-md-4 "></div>
 			<div class="col-xs-6 col-md-4 right">
@@ -29,6 +36,13 @@
 			</div>
 		</div>
 	</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		$("[data-toggle='tooltip']").tooltip();
+	});
 	
+</script>
 </body>
 </html>
