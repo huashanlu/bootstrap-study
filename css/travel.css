@@ -1,0 +1,46 @@
+.container>.row{
+	position:relative;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;	
+}
+.nav-login{
+	border-bottom:1px solid #f1f1f1;
+	line-height:2em;
+}
+.nav-login div {
+	display:block;
+}
+.nav-login div a{
+	margin-left:15px;
+	color:#515050;
+	font-size:0.8em;
+}
+.ul-share{
+	list-style:none;
+	display:inline;
+	margin:0;
+	padding: 0;
+	vertical-align:text-bottom;
+}
+.ul-share li{
+	display:inline-block;
+	margin-right:5px;
+}
+.ul-share li a{
+	//缩进
+	text-indent:110%;
+	// 规定文本不换行
+	white-space:nowrap;
+	overflow:hidden;
+	// 文本中的首字母大写
+	text-transform:capitalize;
+}
+
+// 插入图标，利用背景图
+[class*=icon-share-]{
+	
+}
