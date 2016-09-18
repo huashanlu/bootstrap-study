@@ -5,44 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1" ">
 	<title>travel</title>
+	<link rel="stylesheet " type="text/css " href="css/travel.css ">
 	<link rel="stylesheet " href="css/bootstrap.min.css ">
 	<link rel="stylesheet " href="css/bootstrap-theme.css ">
     <script type="text/javascript " src="js/jquery-3.0.0.min.js "></script>
     <script type="text/javascript " src="js/bootstrap.min.js "></script>
-    <link rel="stylesheet " type="text/css " href="css/travel.css ">
-<!--     <link rel="shortcut icon" href="http://www.travelegendary.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon"> -->
+    <script type="text/javascript " src="js/travel.js "></script>
+
 </head>
-<body>	
+<body>
 	<div class="container-fluid ">
-		<div class="row nav-login ">
-			<div class="col-xs-6 col-md-4 left">
-				<ul class="ul-share">
-					<li>
-						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到新浪微博" class="icon-share-weibo">新浪微博</a>
-					</li>
-					<li>
-						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到微信" class="icon-share-wechart">微信</a>
-					</li>
-					<li>
-						<a href="#" data-toggle="tooltip" data-placement="bottom" title="分享到qq" class="icon-share-qq">qq</a>
-
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-md-4 "></div>
-			<div class="col-xs-6 col-md-4 right">
-				<a href="#" class="right">register</a>				
-				<a href="#" class="right">login</a>						
-			</div>
-		</div>
+    <div class="row nav-login ">
+        <div class="col-xs-12 col-md-4 left ">
+            <ul class="ul-share ">
+                <li>
+                    <a href="#" class="icon-share-weibo " data-toggle="tooltip" data-placement="bottom" title="分享到新浪微博 "></a>
+                </li>
+                <li>
+                    <a href="# " class="icon-share-wechart " data-toggle="tooltip" data-placement="bottom" title="分享到微信 "></a>
+                </li>
+                <li>
+                    <a href="# " class="icon-share-qq " data-toggle="tooltip" data-placement="bottom" title="分享到qq "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-4 "></div>
+        <div class="col-xs-6 col-md-4 right ">
+            <a href="# " class="right ">register</a>
+            <a href="# " class="right ">login</a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default" id="navbar-logo">
+	<div class="container-fluid nav-logo ">
+        <div class="navbar-header">        	
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">   
+            	<span class="sr-only">导航条</span>             
+                <span class="icon-bar "></span>
+                <span class="icon-bar "></span>
+                <span class="icon-bar "></span>
+            </button>
+            <a href="# " class="navbar-brand"><img src="img/logo.png " title="去旅游吧 " class="img-responsive"></a>            
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="# ">Travel Blog</a></li>
+                <li><a href="# ">User</a></li>
+                <li><a href="# ">About US</a></li>
+            </ul>
+        </div>
 	</div>
-
-
-<script type="text/javascript">
-	$(function(){
-		$("[data-toggle='tooltip']").tooltip();
-	});
-	
-</script>
+</nav>
 </body>
 </html>
