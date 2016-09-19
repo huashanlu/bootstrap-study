@@ -14,4 +14,8 @@ $(function(){
 			width:'0'
 		},300);
 	});
+	//定时轮播
+	$('.carousel').carousel({
+  		interval: 3000
+	});
 });
