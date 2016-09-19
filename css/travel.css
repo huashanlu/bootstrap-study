@@ -1,4 +1,10 @@
 @charset "UTF-8";
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+	background-color:#fcfcfc;
+}
 .container-fluid>.row{
 	position:relative;
 }
@@ -10,7 +16,7 @@
 }
 .nav-login{
 	border-bottom:1px solid #f1f1f1;
-	line-height:2em;
+	line-height:2em; 
 }
 .nav-login div {
 	display:block;
@@ -70,16 +76,19 @@
 	color:#515050;
 }
 .nav-logo a img{
-
 	width:70px;
-}
-
-#navbar-collapse-1{
-
+	margin-top:-10px;
 }
 #navbar-logo{
 	background-color:transparent !important;
 	border:0px !important;
+}
+.navbar-body{
+	display:inline-block;
+	width:60%;
+}
+#navbar-collapse-1 li{
+	width:30%;
 }
 #navbar-collapse-1 a{
 	line-height:80px;
@@ -88,4 +97,23 @@
 #navbar-collapse-1 a:hover{
 	background-color:transparent !important;
 	color:#5087f8;
+}
+
+@media screen and (max-width: 767px) { /*当屏幕尺寸小于767px时，应用下面的CSS样式*/  
+    .navbar-body{
+    	display:none;
+    }
+    .anispan{
+    	display:none !important;
+    }
+}  
+.main{
+	margin-top:-14px;
+}
+.anispan{
+	display:block;
+	width:0px;
+	height:1px;
+	left:0;
+	background-color:#5087f8;
 }
