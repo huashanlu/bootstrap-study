@@ -4,87 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-	<title>travel</title>
-	<link rel="stylesheet " type="text/css " href="css/travel.css">
-	<link rel="stylesheet " href="css/bootstrap.min.css">
-	<link rel="stylesheet " href="css/bootstrap-theme.css">
+    <title>travel</title>
+    <link rel="stylesheet " type="text/css " href="css/travel.css">
+    <link rel="stylesheet " href="css/bootstrap.min.css">
+    <link rel="stylesheet " href="css/bootstrap-theme.css">
     <script type="text/javascript " src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript " src="js/bootstrap.min.js "></script>
     <script type="text/javascript " src="js/travel.js "></script>
 </head>
-<body>
-	<div class="container-fluid ">
-    <div class="row nav-login ">
-        <div class="col-xs-12 col-md-4 left ">
-            <ul class="ul-share ">
-                <li>
-                    <a href="#" class="icon-share-weibo " data-toggle="tooltip" data-placement="bottom" title="分享到新浪微博 "></a>
-                </li>
-                <li>
-                    <a href="# " class="icon-share-wechart " data-toggle="tooltip" data-placement="bottom" title="分享到微信 "></a>
-                </li>
-                <li>
-                    <a href="# " class="icon-share-qq " data-toggle="tooltip" data-placement="bottom" title="分享到qq "></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-xs-6 col-md-4 "></div>
-        <div class="col-xs-6 col-md-4 right ">
-            <a href="# " class="right ">register</a>
-            <a href="# " class="right ">login</a>
-        </div>
-    </div>
-</div>
-<nav class="navbar navbar-default" id="navbar-logo">
-	<div class="container-fluid nav-logo ">
-        <div class="navbar-header">        	
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">   
-            	<span class="sr-only">导航条</span>             
-                <span class="icon-bar "></span>
-                <span class="icon-bar "></span>
-                <span class="icon-bar "></span>
-            </button>
-            <a href="# " class="navbar-brand"><img src="img/logo.png " title="去旅游吧 " class="img-responsive"></a>            
-        </div>        
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        	<div class="navbar-body left">&nbsp;</div>
-            <ul class="nav navbar-nav">
-                <li><a href="# ">Travel&nbsp;Blog</a><span class="anispan"></span></li>
-                <li><a href="# ">User</a><span class="anispan"></span></li>
-                <li><a href="# ">About&nbsp;US</a><span class="anispan"></span></li>
-            </ul>
-        </div>
-	</div>
-</nav>
-<div class="main">
-	<div id="myCarousel" class="carousel slide">
-		<!-- 轮播指标 -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-solide-to="0" class="active"></li>
-			<li data-target="myCarousel" data-solide-to="1"></li>
-			<li data-target="myCarousel" data-solide-to="0"></li>
-		</ol>
-		<!-- 轮播项目 -->
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="img/caodi.jpg" title="在草原">
-			</div>
-			<div class="item">
-				<img src="img/hua.jpg" title="悬崖上的花朵">
-			</div>
-			<div class="item">
-				<img src="img/qiao.jpg" title="河边的桥">
-			</div>
-		</div>
-         <!-- 轮播（Carousel）导航 -->
-    <a class="carousel-control left" href="#myCarousel" 
-        data-slide="prev">&lsaquo;
 
-    </a>
-    <a class="carousel-control right" href="#myCarousel" 
-        data-slide="next">&rsaquo;
-    </a>
+<body>
+    <div id="container">
+        <div class="container-fluid ">
+            <div class="row nav-login ">
+                <div class="col-xs-12 col-md-4 left ">
+                    <ul class="ul-share ">
+                        <li>
+                            <a href="#" class="icon-share-weibo" data-toggle="tooltip" data-placement="bottom" title="分享到新浪微博 "></a>
+                        </li>
+                        <li>
+                            <a href="# " class="icon-share-wechart" data-toggle="tooltip" data-placement="bottom" title="分享到微信 "></a>
+                        </li>
+                        <li>
+                            <a href="# " class="icon-share-qq" data-toggle="tooltip" data-placement="bottom" title="分享到qq "></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-4 "></div>
+                <div class="col-xs-6 col-md-4 right ">
+                    <a href="# " class="right ">注册</a>
+                    <a href="# " class="right ">|</a>
+                    <a href="# " class="right ">登录</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" id="navbar-logo">
+            <div class="container-fluid nav-logo ">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">导航条</span>
+                        <span class="icon-bar "></span>
+                        <span class="icon-bar "></span>
+                        <span class="icon-bar "></span>
+                    </button>
+                    <a href="# " class="navbar-brand"><img src="img/logo.png" title="去旅游吧 " class="img-responsive"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="# ">旅游博客</a><span class="anispan"></span></li>
+                        <li><a href="# ">好友圈</a><span class="anispan"></span></li>
+                        <li><a href="# ">关于我们</a><span class="anispan"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-solide-to="0" class="active"></li>
+                    <li data-target="myCarousel" data-solide-to="1"></li>
+                    <li data-target="myCarousel" data-solide-to="0"></li>
+                </ol>
+                <!-- 轮播项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/caodi.jpg" title="在草原">
+                    </div>
+                    <div class="item">
+                        <img src="img/hua.jpg" title="悬崖上的花朵">
+                    </div>
+                    <div class="item">
+                        <img src="img/qiao.jpg" title="河边的桥">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+            <div class="container page">
+            	<div class="postblog">
+            		<div class="inner">
+            			<h2 class="blog-title">没事发发博客</h2>
+            		</div>
+            		<div class="view">
+            			
+            		</div>
+            	</div>
+            	<div class="choose">
+            		
+            	</div> 
+            	</div>           	
+            </div>
+        </div>
+    
+    <div id="footer">
+        <ul>
+            <li><a href="#">旅游博客</a></li>
+            <li><a href="#">好友圈</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
     </div>
-</div>
+  </div>
 </body>
+
 </html>
