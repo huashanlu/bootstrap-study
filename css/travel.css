@@ -1,167 +1,217 @@
 @charset "UTF-8";
-html,body{
-	height:100%;
-	margin:0;
-	padding:0;
-	background-color:#fcfcfc;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
 }
-#container{
-	width:100%;
-	min-height:100%;
-	height:auto !important;
-	height:100%;/* ie6不支持min-height */
-	position:relative;
+
+#container {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* ie6不支持min-height */
+    position: relative;
 }
-.container-fluid>.row{
-	position:relative;
+
+.container-fluid>.row {
+    position: relative;
 }
-.left{
-	float:left;
+
+.left {
+    float: left;
 }
-.right{
-	float:right;	
+
+.right {
+    float: right;
 }
-.nav-login{
-	border-bottom:1px solid #f1f1f1;
-	line-height:2em; 
+
+.nav-login {
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 2em;
 }
+
 .nav-login div {
-	display:block;
+    display: block;
 }
-.nav-login div>a{
-	margin-left:15px;
-	color:#515050;
-	font-size:0.8em;
+
+.nav-login div>a {
+    margin-left: 15px;
+    color: #515050;
+    font-size: 0.8em;
 }
-.nav-login div>a:hover{
-	text-decoration:none;
+
+.nav-login div>a:hover {
+    text-decoration: none;
 }
-.ul-share{
-	list-style:none;
-	display:inline;
-	margin:0;
-	padding: 0;
-	vertical-align:text-bottom;
+
+.ul-share {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    vertical-align: text-bottom;
 }
-.ul-share li{
-	display:inline-block;
-	margin-right:8px;
+
+.ul-share li {
+    display: inline-block;
+    margin-right: 8px;
 }
-.icon-share-weibo{
- 	background-position:-40px -4px;
- }
- .icon-share-wechart{
- 	background-position:-40px -41px;
- }
- .icon-share-qq{
- 	background-position:-0px -42px;
- }
-[class*=icon-share-]{
-   display: inline-block;
-   background-image: url(../img/327785.png);
-   background-repeat: no-repeat;
-   width: 26px;
-   height: 26px;
-   vertical-align: middle;
-   border-radius: 2px;
-   background-size: auto 80px 
+
+.icon-share-weibo {
+    background-position: -40px -4px;
 }
+
+.icon-share-wechart {
+    background-position: -40px -41px;
+}
+
+.icon-share-qq {
+    background-position: -0px -42px;
+}
+
+[class*=icon-share-] {
+    display: inline-block;
+    background-image: url(../img/327785.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    border-radius: 2px;
+    background-size: auto 80px
+}
+
 [class*=icon-share-]:hover {
     opacity: .8;
     filter: alpha(opacity=80)
 }
 
-.nav-logo{
-	padding:0;
+.nav-logo {
+    padding: 0;
 }
 
-.nav-logo a{
-	display:block;
-	height:80px;
-	color:#515050;
-}
-.nav-logo a img{
-	width:70px;
-	margin-top:-10px;
-	margin-left:90%;
-}
-#navbar-logo{
-	background-color:transparent !important;
-	border:0px !important;
+.nav-logo a {
+    display: block;
+    height: 80px;
+    color: #515050;
 }
 
-#navbar-collapse-1 a{
-	line-height:80px;
-	font-size:16px;
-	text-align:center;
-}
-#navbar-collapse-1 a:hover{
-	background-color:transparent !important;
-	color:#5087f8;
+.nav-logo a img {
+    width: 70px;
+    margin-top: -10px;
+    margin-left: 90%;
 }
 
-@media screen and (max-width: 767px) { /*当屏幕尺寸小于767px时，应用下面的CSS样式*/  
-    .anispan{
-    	display:none !important;
+#navbar-logo {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+#navbar-collapse-1 a {
+    line-height: 80px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#navbar-collapse-1 a:hover {
+    background-color: transparent !important;
+    color: #5087f8;
+}
+
+@media screen and (max-width: 767px) {
+    /*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+    .anispan {
+        display: none !important;
     }
-	#navbar-collapse-1 a{
-	text-align:left;
-	}
-}  
-@media screen and (min-width: 767px) { /*当屏幕尺寸大于767px时，应用下面的CSS样式*/ 
-	#myCarousel .carousel-inner{
-		height: 500px;
-	}
-}
-.main{
-	margin-top:-14px;
-	height:80%;
-}
-#myCarousel{
-	height:30%;
+    #navbar-collapse-1 a {
+        text-align: left;
+    }
+    .view img{
+    	height:200px !important;
+    }
 }
 
-.page{
+@media screen and (min-width: 767px) {
+    /*当屏幕尺寸大于767px时，应用下面的CSS样式*/
+    #myCarousel .carousel-inner {
+        height: 500px;
+    }    
+}
 
+.main {
+    margin-top: -14px;
+    margin-bottom:20px;
+    height: 80%;
 }
-.anispan{
-	display:block;
-	width:0px;
-	height:1px;
-	left:0;
-	background-color:#5087f8;
+
+#myCarousel {
+    height: 30%;
 }
-#myCarousel .carousel-inner{
-	// height:500px;
-	// height:100%;
+
+.anispan {
+    display: block;
+    width: 0px;
+    height: 1px;
+    left: 0;
+    background-color: #5087f8;
 }
-#myCarousel img{
+
+#myCarousel .carousel-inner {
+}
+
+#myCarousel img {
+    width: 100%;
+}
+h2 {
+    text-align: center;
+}
+
+hr{
+	border-top: 1px solid #ccc !important;
+}
+.view img{
 	width:100%;
-	// height:500px;
-	// height:100%;
+	height: 300px;
+	opacity:0.7;
+}
+@media screen and (max-height: 450px) {
+    /*当屏幕尺寸小于450px时，应用下面的CSS样式*/
+    #footer {
+        height:30% !important;
+    }
+    #footer ul li {
+        height:30% !important;
+        line-height:30% !important;
+    }
 }
 
-#footer{
-	bottom:0;
-	width:100%;
-	height:15%;
-	clear:both;
-	background-color:#353A3E;
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    clear: both;
+    background-color: #353A3E;
 }
-#footer ul{
-	margin:0 !important;
-	display:block;
-	width100%;
-	list-style:none;
+
+#footer ul {
+    margin: 0 !important;
+    display: block;
+    width:100%;
+    list-style: none;
 }
-#footer ul li{
-	display:inline-block;
-	width:33%;
-	text-align:center;
-	line-height:15%;
+
+#footer ul li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    height: 15%;
+    line-height: 15%;
+    margin-top: 5%;
 }
-#footer ul li a{
-	color:#5087f8;
-	font-size:16px;
-	text-align:middle;
+
+#footer ul li a {
+    color: #5087f8;
+    font-size: 16px;
 }
