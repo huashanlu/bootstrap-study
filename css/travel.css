@@ -1,4 +1,33 @@
 @charset "UTF-8";
+@media screen and (max-width: 767px) {
+    /*当屏幕尺寸小于767px时，应用下面的CSS样式*/
+    .anispan {
+        display: none !important;
+    }
+    #navbar-collapse-1 a {
+        text-align: left;
+    }
+    .view-blog img{
+        height:200px !important;
+    }
+}
+@media screen and (min-width: 767px) {
+    /*当屏幕尺寸大于767px时，应用下面的CSS样式*/
+    #myCarousel .carousel-inner {
+        height: 500px;
+    }    
+}
+@media screen and (max-height: 450px) {
+    /*当屏幕尺寸小于450px时，应用下面的CSS样式*/
+    #footer {
+        height:30% !important;
+    }
+    #footer ul li {
+        height:30% !important;
+        line-height:30% !important;
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -120,25 +149,7 @@ body {
     color: #5087f8;
 }
 
-@media screen and (max-width: 767px) {
-    /*当屏幕尺寸小于767px时，应用下面的CSS样式*/
-    .anispan {
-        display: none !important;
-    }
-    #navbar-collapse-1 a {
-        text-align: left;
-    }
-    .view img{
-    	height:200px !important;
-    }
-}
 
-@media screen and (min-width: 767px) {
-    /*当屏幕尺寸大于767px时，应用下面的CSS样式*/
-    #myCarousel .carousel-inner {
-        height: 500px;
-    }    
-}
 
 .main {
     margin-top: -14px;
@@ -166,27 +177,79 @@ body {
 }
 h2 {
     text-align: center;
+    word-spacing:8px; 
+    letter-spacing: 1px;
 }
 
 hr{
 	border-top: 1px solid #ccc !important;
 }
+.view{
+    background-color:#333333;
+    position:relative;
+    cursor:pointer;
+}
 .view img{
+    opacity:0.5;
+    display:block;
+}
+.view-blog img{
 	width:100%;
-	height: 300px;
-	opacity:0.7;
+	height: 300px;	
 }
-@media screen and (max-height: 450px) {
-    /*当屏幕尺寸小于450px时，应用下面的CSS样式*/
-    #footer {
-        height:30% !important;
-    }
-    #footer ul li {
-        height:30% !important;
-        line-height:30% !important;
-    }
+.view-choose{
+    margin:0 !important;
+    padding:0 !important;
 }
+.div-span{
+    background-color:transparent;
+    position:absolute;
+    top: 30%;
+    left：0；
+    z-index:2;
+    width:100%;
+}
+.div-span *{
+    color:#FFFFFF;
+    text-align:center;
+    word-spacing:8px; 
+    letter-spacing: 1px;
+    padding:0;
+}
+.view-filed{
+    padding-top:10px;
+}
+.blue-line{
+    height:3px;
+    width:24px;
+    background-color:#5087f8;
+    margin-left:auto;
+    margin-right:auto;
+}
+.view-filed a{
+    font-weight:bold;
+}
+.view-filed a:hover{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+.view-filed a:visited {
+    text-decoration:none;
+    color: #FFFFFF;
+}
+.like{
+    display:inline-block;
+    background-image:url(../img/heart.svg);
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+.talk{
+    display:inline-block;
+    background-image:url(../img/Comments.svg);
+    background-repeat:no-repeat;
+    background-position:top center;
 
+}
 #footer {
     bottom: 0;
     width: 100%;
