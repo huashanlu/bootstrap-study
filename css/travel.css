@@ -10,6 +10,21 @@
     .view-blog img{
         height:200px !important;
     }
+    .dong div{
+        font-size:14px !important;
+    }
+    .dong-left{
+        left:15% !important;
+    }
+    .dong-right{
+        right:-50% !important;
+    }
+    .blog-title{
+         font-size:14px;
+    }
+    .div-span *{
+        font-size:12px;
+    }
 }
 @media screen and (min-width: 767px) {
     /*当屏幕尺寸大于767px时，应用下面的CSS样式*/
@@ -138,27 +153,23 @@ body {
     border: 0px !important;
 }
 
-#navbar-collapse-1 a {
-    line-height: 80px;
+.unactive{
+    line-height: 80px !important;
     font-size: 16px;
-    text-align: center;
+    text-align: center;    
 }
-
-#navbar-collapse-1 a:hover {
-    background-color: transparent !important;
-    color: #5087f8;
+.unactive:hover{
+    color: #5087f8 !important;
 }
-
-
-
-.main {
-    margin-top: -14px;
-    margin-bottom:20px;
-    height: 80%;
+.onactive{
+     line-height: 80px !important;
+    font-size: 16px;
+    text-align: center;  
+    color: #5087f8 !important;
 }
-
 #myCarousel {
     height: 30%;
+    position:relative;
 }
 
 .anispan {
@@ -168,19 +179,44 @@ body {
     left: 0;
     background-color: #5087f8;
 }
-
+.onspan{
+    display: block;
+    width:90%;
+    height: 1px;
+    left: 0;
+    background-color: #5087f8;
+}
 #myCarousel .carousel-inner {
 }
 
 #myCarousel img {
     width: 100%;
 }
-h2 {
+.main {
+    margin-top: -14px;
+    margin-bottom:20px;
+    height: 80%;
+}
+.dong{
+    width:100%;
+    position:absolute;    
+    // bottom:5%;
+}
+.dong div{   
+    font-size:20px;
+}
+.dong-left{
+    left:70%;
+}
+.dong-right{
+    right:0;
+}
+.blog-title{
     text-align: center;
     word-spacing:8px; 
     letter-spacing: 1px;
+    font-family:"微软雅黑";
 }
-
 hr{
 	border-top: 1px solid #ccc !important;
 }
@@ -201,6 +237,9 @@ hr{
     margin:0 !important;
     padding:0 !important;
 }
+.view-choose [class*=col-]{
+    padding:0 !important;
+}
 .div-span{
     background-color:transparent;
     position:absolute;
@@ -208,6 +247,9 @@ hr{
     left：0；
     z-index:2;
     width:100%;
+}
+.view-blog .div-span{
+    
 }
 .div-span *{
     color:#FFFFFF;
