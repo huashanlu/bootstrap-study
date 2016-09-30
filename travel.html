@@ -53,14 +53,15 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="# ">旅游博客</a><span class="anispan"></span></li>
-                        <li><a href="# ">好友圈</a><span class="anispan"></span></li>
-                        <li><a href="# ">关于我们</a><span class="anispan"></span></li>
+                        <li><a href="#" class="unactive">旅游博客</a><span class="anispan"></span></li>
+                        <li><a href="#" class="unactive">好友圈</a><span class="anispan"></span></li>
+                        <li><a href="#" class="unactive">关于我们</a><span class="anispan"></span></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="main">
+            <h2 class="blog-title">分享你的旅游时光</h2>
             <div id="myCarousel" class="carousel slide">
                 <!-- 轮播指标 -->
                 <ol class="carousel-indicators">
@@ -83,6 +84,11 @@
                 <!-- 轮播（Carousel）导航 -->
                 <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
                 <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                <!-- 提示 -->
+                <div class="dong" id="dong">
+                    <div class="btn btn-group btn-primary dong-left">免费加入</div>
+                    <div class="btn btn-group btn-primary dong-right">去逛逛博客</div>
+                </div>
             </div>
             <div class="container page">
                 <div class="postblog">
@@ -112,10 +118,42 @@
                         <hr>
                     </div>
                     <div class="view view-choose row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="img/ma.jpg" class="img-responsive"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="img/meinv.jpg" class="img-responsive"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="img/ying.jpg" class="img-responsive"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="img/chang.jpg" class="img-responsive"></div>                      
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/ma.jpg" class="img-responsive">
+                            <div class="div-span">
+                                <h3>博客馆</h3>
+                                <div class="view-filed">
+                                    <div class="blue-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/meinv.jpg" class="img-responsive">
+                            <div class="div-span">
+                                <h3>我的资料</h3>
+                                <div class="view-filed">
+                                    <div class="blue-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/ying.jpg" class="img-responsive">
+                            <div class="div-span">
+                                <h3>我的兴趣</h3>
+                                <div class="view-filed">
+                                    <div class="blue-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <img src="img/chang.jpg" class="img-responsive">
+                            <div class="div-span">
+                                <h3>现在就加入博客吧</h3>
+                                <div class="view-filed">
+                                    <div class="blue-line"></div>
+                                </div>
+                            </div>
+                        </div>                      
                     </div>
                 </div>
             </div>
